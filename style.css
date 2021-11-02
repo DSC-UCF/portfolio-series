@@ -1,0 +1,343 @@
+/* 
+Color's Used:
+https://coolors.co/000000-14213d-d1dbf0-fca311-f1c47b-e5e5e5-ffffff
+*/
+
+html{
+    background-color: #14213D;
+    font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+}
+
+/*
+    Navigation Bar
+*/
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbutton{
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #E5E5E5;
+}
+
+/*
+    Header
+*/
+h1{
+    margin-top: 100px;
+    margin-left: 10%;
+    font-weight: bolder;
+    font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+}
+
+span{
+    display:block;
+}
+
+.top-span{
+    color: #FCA311;
+    font-size: 100px;
+}
+
+.bottom-span{
+    color: #F1C47B;
+    font-size: 80px;
+}
+
+/*
+    Bio
+*/
+
+.bio{
+    background-color:#D1DBF0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    padding: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+}
+
+p{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/*
+    Footer
+*/
+.footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.social-links{
+    font-size:30px;
+}
+
+.fa{
+    text-decoration: none;
+    margin: 10px;
+    border-radius:10px;
+    color: white;
+}
+hr {
+    height: .25rem;
+    margin: 0;
+    width: 18%; 
+    margin-left: 1.2%;
+    background: #FCA311;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.menu-button:hover ~ hr{
+    width: 18% !important;
+    margin-left: 1.2% !important;
+}
+
+.projects-button:hover ~ hr{
+    width: 24.5% !important;
+    margin-left: 31% !important;
+}
+
+.contact-button:hover ~ hr{
+    width: 23.8% !important;
+    margin-left: 67.2% !important;
+}
+/* 
+===================================
+=    BEGINNING OF CONTACT HTML    =
+===================================
+*/
+
+.contact-container {
+    /* First, let's create our container and make it look nice */
+    /* Centralize Horizontally */
+    width: 61%;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Put nice height and try to centralize vertically */
+    height: 610px;
+    margin-top: 90px;
+
+    border-radius: 20px;
+    background-color: #D1DBF0;  /* Light Periwinkle Color from Color Palette */
+
+    /* Once done, we can start using Flex to nicely put subcontainers */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-subcontainer {
+    /*
+    ONLY ADD INPUT/TEXT/BUTTON AFTER THIS PART
+    Create how the subcontainers will look.
+    */
+    background-color: rgba(0,0,0, 0.1);
+    width: 100%;
+    margin: 15px; /* Prevent from touching the general container */
+    border-radius: 20px;
+
+    /* 
+    ONLY DO THIS AFTER PUTTING INPUT/TEXT BOXES.
+    To prevent touching edge of subcontainer
+    */
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* 
+Email Subcontainer
+*/
+#email-form > * {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+
+    /* 
+    Border prevents border by default.
+    Outline prevents border when clicked. 
+    */
+    border: none;
+    outline: none;
+    
+    /*
+    Give them height and width.
+    Then, spread them apart.    
+    */
+    margin-top: 20px;
+    width: 90%;
+    height: 50px;
+
+    /* this is to prevent touch edges of input/text boxes */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#message {
+    resize: none;
+    height: 300px;
+
+    /* This is because the text inside the textarea still is too close on the top and bottom */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Nice effect */
+#submit-button:hover{
+    background-color: rgb(197,197,197);
+}
+
+
+.alert {
+    width: 61%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #FF7276;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    
+}
+
+.alert-green {
+    width: 61%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #66FFE5;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+
+/* 
+Information Subcontainer
+*/
+.info {
+    /* attempt to vertically centralize info */
+    padding-top: 100px;
+}
+
+/* overwriting class */
+.info .fa {
+    color: tomato;
+}
+
+/* INCREASES ICON SIZES because they are FONTS */
+.socialmedia {
+    font-size: 42px;
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+}
+
+/*
+==========================
+= START OF PROJECTS.HTML =
+==========================
+*/
+
+.projects-title {
+    color: #FCA311;
+    font-size: 75px;
+    margin: 40px;
+    margin-left: 10%;
+}
+
+.container {
+    width: 65%;
+    max-width: 1200px;
+    /* border: 1px solid white; */
+
+    /* Top/Bottom = 0 | Left/Right = Auto */
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* best way to centralize everything */
+    justify-content: space-evenly;
+}
+
+.card-container{
+    width: 30%;
+    min-width: 350px;
+    margin: 1%;
+}
+
+.card{
+    height: 95%;
+
+    background-color: white;
+    border-radius: 12px;
+
+    /* leave more space from text & images */
+    padding: 10px;
+  }
+
+img {
+    width: 100%;
+    height: 200px;
+
+    /* keeps the object's aspect ratio while trying to fill the whole box */
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+.project-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.project-description {
+    margin: 10px;
+}
+
+.card a {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+
+    background-color: #E5E5E5;
+    border: 2px solid grey;
+    color: black;
+    text-decoration: none;
+
+    border-radius: 20px;
+    padding: 5px;
+
+    text-align: center;
+    font-size: 18px;
+}
+
+/*
+==========================
+= DEFAULT NAVBAR ON ABOUT=
+==========================
+*/
+
+/* Add the HR to HTML and then delete this thing below after adding the HR! */
+.navbutton:hover{
+    text-decoration: none;
+}
+
